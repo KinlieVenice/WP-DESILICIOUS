@@ -1,0 +1,40 @@
+@use "../abstract/" as *;
+
+.tns-outer{
+    overflow: hidden;
+    max-width: 70rem;
+    & > button{
+        display: none;
+    }
+}
+.tns-nav{
+    text-align: center;
+    button{
+        margin: 2rem 0.5rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: none;
+    }
+    &-active{
+        background-color: $clr--secondary;
+    }
+}
+
+#controls {
+    position: absolute;
+}
+.prev{
+    color: $clr--secondary;
+    font-size: 2rem;
+    position: relative;
+    bottom: 16rem;
+    left: 6rem;
+    @include mediaQuery(520px){
+        display: none;
+    }
+}
+.next{
+    @extend .prev;
+    left: 80rem;
+}

@@ -1,0 +1,52 @@
+@use "./colors" as *;
+
+$colors : (
+    "dark": $clr--dark,
+    "light": $clr--light,
+    "primary": $clr--primary,
+    "secondary": $clr--secondary,
+);
+
+@each $key, $val in $colors {
+    .bg{
+        &--#{$key}{
+            background-color: $val;
+        }
+    }
+    .text{
+        &--#{$key}{
+            color: $val;
+        }
+    }
+}
+
+$alignments: center, right, left, justify;
+@each $alignment in $alignments{
+    .text--#{$alignment}{
+        text-align: $alignment;
+    }
+}
+
+@for $i from 0 through 20{
+    .mb--#{$i}{
+        margin-bottom: $i + rem;
+    }
+    .mt--#{$i}{
+        margin-top: $i + rem;
+    }
+    .ml--#{$i}{
+        margin-left: $i + rem;
+    }
+    .mr--#{$i}{
+        margin-right: $i + rem;
+    }
+    .pb--#{$i}{
+        padding-bottom: $i + rem;
+    }
+    .pt--#{$i}{
+        padding-top: $i + rem;
+    }
+    .py--#{$i}{
+        padding: $i + rem 0;
+    }
+}

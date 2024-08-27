@@ -1,0 +1,250 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.homeBanner {
+  padding: 10rem 0;
+  &__wrapper {
+    @include centerAll;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3rem;
+    font-family: $font-secondary;
+    text-shadow: -2px -2px $clr--secondary;
+    margin-bottom: 2rem;
+  }
+  h4 {
+    color: $clr--secondary;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  &__button {
+    @include between;
+    gap: 1rem;
+  }
+}
+
+.homeMenu {
+  padding: 5rem 0;
+  &__title {
+    @include centerAll;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-family: $font-secondary;
+    }
+  }
+  &__wrapper {
+    @include unevenGrid(1fr 1fr 1fr, 3rem);
+    place-content: center;
+  }
+  &__card {
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid $clr--secondary;
+      border-radius: 2rem;
+    }
+    img {
+      width: 17rem;
+    }
+  }
+  &__details p {
+    color: $clr--secondary;
+    margin-bottom: 2rem;
+  }
+}
+
+.homeAbout {
+  background-image: url(../../desilicious/IMG/about.png);
+  @include bgImage-size;
+  width: 100%;
+  padding: 13rem 0;
+
+  &__details {
+    max-width: 40rem;
+    h4 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      font-family: $font-secondary;
+    }
+  }
+}
+
+.homeMenulist {
+  padding: 5rem 0;
+  &__title {
+    @include centerAll;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-family: $font-secondary;
+    }
+  }
+  &__wrapper {
+    @include evenGrid(2, 1rem);
+    justify-items: center;
+  }
+  &__food {
+    ul {
+      @include between;
+      li {
+        color: $clr--secondary;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.bat {
+  padding: 10rem 0;
+  &__wrapper {
+    @include centerAll;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../desilicious/IMG/book\ a\ table\ bg.jpg);
+    @include bgImage-size;
+    height: 120vh;
+  }
+  &__table {
+    padding: 5rem;
+    width: 60rem;
+    height: 45rem;
+    h4 {
+      font-size: 2.5rem;
+    }
+    form {
+      border: 1px solid $clr--light;
+      padding: 2rem;
+    }
+    input {
+      width: 98%;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      background-color: transparent;
+      border: 1px solid $clr--secondary;
+      &::placeholder {
+        color: $clr--light;
+        font-family: $font-primary;
+      }
+      &:focus,
+      &enabled {
+        color: $clr--light;
+      }
+    }
+
+    textarea {
+      @extend input;
+      height: 10rem;
+    }
+  }
+  &__name {
+    @include between;
+  }
+}
+
+.testimonial {
+  &__wrapper {
+    @include centerAll;
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+
+  &__clients {
+    i {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border: 2px solid $clr--secondary;
+      padding: 1.5rem;
+      border-radius: 50%;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $clr--secondary;
+    }
+    small {
+      font-weight: 600;
+    }
+  }
+}
+
+.video {
+  padding: 5rem 0;
+  &__wrapper {
+    @include centerAll;
+  }
+}
+
+.homeBlog {
+  &__title {
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 2.5rem;
+      font-family: $font-secondary;
+    }
+  }
+  &__wrapper {
+    @include evenGrid(3, 5rem);
+  }
+  &__card {
+    img {
+      margin-bottom: 2rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      &:hover {
+        color: $clr--secondary;
+      }
+    }
+  }
+}
+
+@include mediaQuery (520px) {
+  .homeMenu {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+    }
+  }
+
+  .homeMenulist {
+    padding-bottom: 0;
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+    } 
+  }
+
+  .bat {
+    padding: 0;
+    &__wrapper {
+      background-image: none;
+    }
+    &__table{
+      form {
+        width: 20rem
+      }
+    }
+  }
+
+  .homeBlog {
+    &__wrapper {
+      @include evenGrid (1, 1rem);
+    }
+  }
+}

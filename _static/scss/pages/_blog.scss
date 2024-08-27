@@ -1,0 +1,37 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blogBanner {
+  padding: 5rem 0;
+
+  &__wrapper {
+    padding-left: 15rem;
+    padding-right: 25rem;
+    @include evenGrid (1, 1rem);
+  }
+
+  &__content {
+    img {
+      border-radius: 2rem;
+      margin-top: 3rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    a {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+@include mediaQuery (520px) {
+  .blogBanner {
+    &__wrapper {
+      padding: 0;
+    }
+  }
+}

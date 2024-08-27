@@ -1,0 +1,65 @@
+@use "../abstract/" as *;
+
+.btn {
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    &.bg--secondary{
+        @extend .btn;
+        background-color: $clr--secondary;
+        border-radius: 2rem;
+        color: $clr--light;
+        font-weight: 600;
+        &:hover{
+            background-color: $clr--light;
+            border: 1px solid $clr--secondary;
+            color: $clr--secondary;
+        }
+    }
+    &.bg--secondary-outline {
+        @extend .btn;
+        background-color: transparent;
+        border: 1px solid $clr--secondary;
+        color: $clr--secondary;
+        border-radius: 2rem;
+        font-weight: 100;
+        &:hover{
+            background-color: $clr--secondary;
+            color: $clr--light;
+        }
+    }
+    &.radius{
+        @extend .bg--secondary-outline;
+        border-radius: 0.3rem;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+    }
+    &.bg--footer{
+        @extend .btn;
+        padding: 0.2rem 2rem;
+        background-color: $clr--secondary;
+        border-radius: 2rem;
+        color: $clr--light;
+        border: 1px solid transparent;
+        font-weight: 600;
+        &:hover{
+            background-color: $clr--light;
+            border: 1px solid $clr--secondary;
+            color: $clr--secondary;
+        }
+    }
+    &.bg--product{
+        @extend .btn;
+        background-color: transparent;
+        border: 1px solid $clr--secondary;
+        color: $clr--light;
+        border-radius: 2rem;
+        padding: 0.6rem 1.5rem;
+        &:hover {
+            background-color: $clr--light;
+            color: $clr--secondary;
+        }
+    }
+}
+
