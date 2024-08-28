@@ -774,12 +774,7 @@ img {
   list-style: none;
 }
 
-.btn,
-.btn.bg--product,
-.btn.bg--footer,
-.btn.bg--secondary-outline,
-.btn.radius,
-.btn.bg--secondary {
+.btn, .btn.bg--product, .btn.bg--footer, .btn.bg--secondary-outline, .btn.radius, .btn.bg--secondary {
   padding: 0.8rem 2rem;
   background-color: transparent;
   border: 1px solid transparent;
@@ -796,16 +791,14 @@ img {
   border: 1px solid #dd1d01;
   color: #dd1d01;
 }
-.btn.bg--secondary-outline,
-.btn.radius {
+.btn.bg--secondary-outline, .btn.radius {
   background-color: transparent;
   border: 1px solid #dd1d01;
   color: #dd1d01;
   border-radius: 2rem;
   font-weight: 100;
 }
-.btn.bg--secondary-outline:hover,
-.btn.radius:hover {
+.btn.bg--secondary-outline:hover, .btn.radius:hover {
   background-color: #dd1d01;
   color: #fff;
 }
@@ -866,8 +859,7 @@ img {
   position: absolute;
 }
 
-.prev,
-.next {
+.prev, .next {
   color: #dd1d01;
   font-size: 2rem;
   position: relative;
@@ -875,8 +867,7 @@ img {
   left: 6rem;
 }
 @media screen and (max-width: 520px) {
-  .prev,
-  .next {
+  .prev, .next {
     display: none;
   }
 }
@@ -1043,8 +1034,6 @@ img {
 .blogBanner__content img {
   border-radius: 2rem;
   margin-top: 3rem;
-  height: 30rem;
-  object-fit: cover;
 }
 .blogBanner__content h3 {
   font-size: 1.8rem;
@@ -1150,8 +1139,7 @@ img {
 .contactPage__input {
   padding: 2rem 0;
 }
-.contactPage__input input,
-.contactPage__input textarea {
+.contactPage__input input, .contactPage__input textarea {
   width: 100%;
   background-color: transparent;
   border: 1px solid #fff;
@@ -1160,19 +1148,15 @@ img {
   margin-bottom: 2rem;
   margin-top: 0.5rem;
 }
-.contactPage__input input::-moz-placeholder,
-.contactPage__input textarea::-moz-placeholder {
+.contactPage__input input::-moz-placeholder, .contactPage__input textarea::-moz-placeholder {
   color: #fff;
   font-family: "Patrick Hand", cursive;
 }
-.contactPage__input input::placeholder,
-.contactPage__input textarea::placeholder {
+.contactPage__input input::placeholder, .contactPage__input textarea::placeholder {
   color: #fff;
   font-family: "Patrick Hand", cursive;
 }
-.contactPage__input input:focus,
-.contactPage__input textarea:focus,
-.contactPage__input inputenabled {
+.contactPage__input input:focus, .contactPage__input textarea:focus, .contactPage__input inputenabled {
   color: #fff;
 }
 .contactPage__input textarea {
@@ -1183,9 +1167,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.contactPage__input--name input,
-.contactPage__input--name .contactPage__input textarea,
-.contactPage__input .contactPage__input--name textarea {
+.contactPage__input--name input, .contactPage__input--name .contactPage__input textarea, .contactPage__input .contactPage__input--name textarea {
   width: 32rem;
   margin-bottom: 2rem;
   margin-top: 0.5rem;
@@ -1210,8 +1192,7 @@ img {
   .contactPage__info li {
     margin-bottom: 0;
   }
-  .contactPage__input input,
-  .contactPage__input textarea {
+  .contactPage__input input, .contactPage__input textarea {
     width: 100%;
   }
 }
@@ -1284,7 +1265,7 @@ img {
 }
 
 .homeAbout {
-  background-image: url(../img/about.png);
+  background-image: url(../../desilicious/IMG/about.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1319,13 +1300,13 @@ img {
 .homeMenulist__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 7rem;
-  max-width: 70%;
-  margin: 0 auto;
+  gap: 1rem;
+  justify-items: center;
 }
 .homeMenulist__food ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .homeMenulist__food ul li {
   color: #dd1d01;
@@ -1344,8 +1325,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/book\ a\ table\ bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../desilicious/IMG/book\ a\ table\ bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1363,28 +1343,22 @@ img {
   border: 1px solid #fff;
   padding: 2rem;
 }
-.bat__table input,
-.bat__table textarea {
+.bat__table input, .bat__table textarea {
   width: 98%;
   margin: 0.5rem;
   padding: 0.5rem;
   background-color: transparent;
   border: 1px solid #dd1d01;
-  resize: none;
 }
-.bat__table input::-moz-placeholder,
-.bat__table textarea::-moz-placeholder {
+.bat__table input::-moz-placeholder, .bat__table textarea::-moz-placeholder {
   color: #fff;
   font-family: "Patrick Hand", cursive;
 }
-.bat__table input::placeholder,
-.bat__table textarea::placeholder {
+.bat__table input::placeholder, .bat__table textarea::placeholder {
   color: #fff;
   font-family: "Patrick Hand", cursive;
 }
-.bat__table input:focus,
-.bat__table textarea:focus,
-.bat__table inputenabled {
+.bat__table input:focus, .bat__table textarea:focus, .bat__table inputenabled {
   color: #fff;
 }
 .bat__table textarea {
@@ -1598,9 +1572,7 @@ img {
   background-color: transparent;
   color: #fff;
 }
-.productBanner__search input:enabled,
-.productBanner__search input:focus,
-.productBanner__search input::placeholder {
+.productBanner__search input:enabled, .productBanner__search input:focus, .productBanner__search input::placeholder {
   border: none;
   background-color: transparent;
   color: #fff;
@@ -1649,107 +1621,4 @@ img {
     width: 100%;
     grid-row: 2/3;
   }
-} /*# sourceMappingURL=main.min.css.map */
-
-.single_wrapper {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10rem 0;
-
-  * {
-    color: #2e2e2e;
-  }
-
-  p {
-    color: #2e2e2e;
-    margin-bottom: 10px;
-  }
-  h1 {
-    font-size: clamp(30px, 7vw, 40px);
-  }
-  ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-  }
-  .info ul {
-    display: flex;
-    gap: 10px;
-  }
-  .article_body > * {
-    color: #2e2e2e;
-  }
-  img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .info {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.food_wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-}
-
-.food {
-  padding: 2rem 0;
-
-  h1 {
-    font-size: clamp(30px, 8vh, 120px);
-    text-align: center;
-    margin: 5rem 0;
-    text-transform: capitalize;
-  }
-
-  .food_item {
-    text-align: center;
-    h3 {
-      font-size: clamp(18px, 8vw, 30px);
-    }
-    p {
-      margin: 10px 0 40px;
-      font-size: 18px;
-    }
-    img {
-      object-fit: cover;
-      width: 264px;
-      height: 264px;
-      border-radius: 50%;
-    }
-  }
-}
-
-.menu__food__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 22rem;
-  row-gap: 2rem;
-  max-width: 78%;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
-.menu__food__griditem ul {
-  display: flex;
-  justify-content: space-between;
-  color: #dd1d01;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.productBanner__products img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-}
+}/*# sourceMappingURL=main.min.css.map */
