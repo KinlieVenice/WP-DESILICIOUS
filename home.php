@@ -12,7 +12,7 @@
             }?>
             <h3><?php the_title()?></h3>
             <p>
-             <?php echo wp_trim_words(get_the_excerpt(), 10)?>
+             <?php echo wp_trim_words(get_the_excerpt(), 9)?>
             </p>
             <a href="<?php the_permalink()?>" class="btn bg--secondary">Read More</a>
           </div>

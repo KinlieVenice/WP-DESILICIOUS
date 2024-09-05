@@ -5,4 +5,3 @@
 
 ?>
 
-custom homepage

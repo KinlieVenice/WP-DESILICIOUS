@@ -190,7 +190,7 @@
       </div>
     </section>
 
-        <section class="homeBlog bg--primary py--5">
+    <section class="homeBlog bg--primary py--5">
       <div class="container">
         <div class="homeBlog__title">
           <h2>From Our Blog</h2>
